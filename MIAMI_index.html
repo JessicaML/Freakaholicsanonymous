@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt. IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Miami Splice</title>
+        <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/MIAMI_screen.css">
+        <script src="scripts/lib/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+  
+
+<a href="#" id="miami_1"><img src="images/Miami_1.png" onmouseover="this.src='images/Miami_1.gif'" onmouseout="this.src='images/Miami_2.png'" /></a>
+
+<a href="#" id="miami_2"><img src="images/Miami_2.png" onmouseover="this.src='images/Miami_2.gif'" onmouseout="this.src='images/Miami_3.png'" /></a>
+
+<a href="#" id="miami_3"><img src="images/Miami_3.png" onmouseover="this.src='images/Miami_1.gif'" onmouseout="this.src='images/Miami_1.png'" /></a>
+
+<audio preload="auto" id="miami-1" > 
+	<source src="ThoroughLover3.mp3" controls></source>
+				<source src="ThoroughLover3.ogg" controls></source>
+				Your browser isn't invited for super fun time.
+			</audio>
+
+		<script>$("#miami_1 a")
+  .each(function(i) {
+    if (i != 0) { 
+      $("#miami_1")
+        .clone()
+        .attr("id", "miami_1" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#miami_1" + $(this).data("beeper"))[0].play();
+  });
+$("#miami_1").attr("id", "miami_10");</script>
+		
+		</div></section>
+    </body>
+</html>

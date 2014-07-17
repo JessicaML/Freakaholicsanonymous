@@ -1,0 +1,43 @@
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+
+body
+{
+/*background:url(images/Background_gif.gif);background-size:750px 750px;
+background-repeat:no-repeat;*/
+background-color:#545454;
+
+} 
+
+
+#homebutton{
+    top:6%;
+    left:0.5%;
+    position:fixed;
+    background-image: url('images/Miami_1.png')no-repeat;
+    height: 484px;
+    width: 253px;
+}
+
+#homebutton:hover{
+    top:6%;
+    left:0.5%;
+    position:fixed;
+    cursor:normal;
+    background-image: url('images/Miami_1.gif')no-repeat;
+    height: 484px;
+    width: 253px;
+}
+
+
+
+
+
+
+
